@@ -55,4 +55,5 @@ Kullanıcı, chunk boyutunu MB cinsinden ayarlayabilir. Varsayılan olarak, şif
 ## Örnek Kullanım 
 Şifreleme Programı çalıştırın ve "1" tuşuna basarak şifreleme seçeneğini seçin. Şifrelenecek dosyayı seçin. Şifreleme anahtarını girin (veya /anahtaroluştur[x] komutunu kullanarak rastgele bir anahtar oluşturun). Şifreleme işlemi tamamlandığında, şifreli dosya aynı dizine .enc uzantısı ile kaydedilir. Şifre Çözme Programı çalıştırın ve "2" tuşuna basarak şifre çözme seçeneğini seçin. Şifresi çözülecek dosyayı seçin. Şifre çözme anahtarını girin. Şifre çözme işlemi tamamlandığında, çözülen dosya aynı dizine kaydedilir.
 
-Lisans Bu proje MIT lisansı altında lisanslanmıştır. Ayrıntılar için LICENSE dosyasına bakın.
+## Lisans 
+Bu proje MIT lisansı altında lisanslanmıştır. Ayrıntılar için LICENSE dosyasına bakın.
