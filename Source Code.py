@@ -255,7 +255,7 @@ while True:
             print("Eğer seçilen dosya 256MBtan daha küçükse hash değeri otomatik olarak yazdırılır. Bunu daha sonra şifre çözme işleminden sonra dosya bütünlüğü doğrulamak için kullanabilirsiniz.")
             print("Rastgele anahtar oluşturmak için anahtar sorulduğu kısımda /anahtaroluştur[x] yazmanız yeterlidir. [x] yerine karakter uzunluğu yazmalısınız.\n")
         elif choice == "6":
-            print("Yapan: Ahmet Emre\nGithub: ahmetemre3829\nVersiyon: 3.4.2\n22/05/2024\n")
+            print("Yapan: Ahmet Emre\nGithub: ahmetemre3829\nVersiyon: x.x.x\n22/05/2024\n")
         elif choice == "3":
             try:
                 chunk_input = input("İstediğiniz chunk boyutunu MB cinsinden girin: ")
