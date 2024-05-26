@@ -1,59 +1,59 @@
-# Proje Hakkında
-## İlk Bakış
-Bu proje, kullanıcıların dosyalarını güvenli bir şekilde şifrelemelerini ve şifre çözmelerini sağlayan bir Python uygulamasıdır. Program, XChaCha20-Poly1305 şifreleme algoritmasını kullanarak dosyaları şifreler ve argon2 KDF algoritması ile 256 bit uzunluğunda bir anahtar türetir. Ayrıca, dosyaların bütünlüğünü doğrulamak için SHA-256 hash hesaplama özelliği de sunar.
+# About the Project
+## First Look
+This project is a Python application that allows users to securely encrypt and decrypt their files. The program encrypts files using the XChaCha20-Poly1305 encryption algorithm and derives a 256-bit long key with the argon2 KDF algorithm. It also offers SHA-256 hash calculation to verify the integrity of the files.
 
-## Özellikler
-* Dosya Şifreleme: 
-Kullanıcının seçtiği dosyayı şifreler ve şifreli dosyayı .enc uzantısıyla kaydeder. 
-* Dosya Şifre Çözme: Kullanıcının seçtiği şifreli dosyanın şifresini çözer. 
-* Dosya Bütünlüğü Doğrulama: Dosyaların SHA-256 hash değerlerini hesaplar ve karşılaştırır. 
-* Chunk Boyutu Ayarlama: İşlemler sırasında kullanılacak chunk boyutunu MB cinsinden ayarlayabilme. 
-* Rastgele Anahtar Oluşturma: Kullanıcıya belirli bir uzunlukta rastgele bir anahtar oluşturma imkanı sunar.
-* Yapımcıya mesaj gönder: Yapımcıya geri dönüş sağlamınıza imkan tanır.
+## Features
+* File Encryption:
+Encrypts the user's selected file and saves the encrypted file with the .enc extension.
+* File Decryption: Decrypts the encrypted file selected by the user.
+* File Integrity Verification: Calculates and compares SHA-256 hash values of files.
+* Chunk Size Setting: Ability to set the chunk size in MB to be used during operations.
+* Random Key Generation: Allows the user to generate a random key of a specific length.
+* Send message to producer: Allows you to provide feedback to the producer.
 
-## Gereksinimler 
-Bu programın çalışması için aşağıdaki Python kütüphanelerine ihtiyaç vardır:
+## Requirements
+The following Python libraries are needed for this program to work:
 
-* nacl: PyNaCl kütüphanesi, XChaCha20-Poly1305 şifreleme algoritması için gereklidir. 
-* tkinter: GUI bileşenleri ve dosya seçme işlemleri için gereklidir. 
-* colorama: Terminalde renkli çıktılar için kullanılır. 
-* hashlib: SHA-256 hash hesaplama için gereklidir. 
-* argon2: argon2 KDF algoritması için gereklidir. 
-* msvcrt: Klavye girdi kontrolü için kullanılır (yalnızca Windows sistemlerde çalışır). Ayrıca, Python 3.8 veya daha üst bir sürümünün yüklü olması gerekmektedir.
+* nacl: PyNaCl library, required for the XChaCha20-Poly1305 encryption algorithm.
+* tkinter: Required for GUI components and file selection operations.
+* colorama: Used for color output in the terminal.
+* hashlib: Required for SHA-256 hash calculation.
+* argon2: Required for argon2 KDF algorithm.
+* msvcrt: Used for keyboard input control (only works on Windows systems). Also, Python 3.8 or higher must be installed.
 
-## Kurulum 
-Gerekli kütüphaneleri yüklemek için aşağıdaki komutları kullanabilirsiniz:
+## Installation
+You can use the following commands to install the required libraries:
 
 pip install pynacl, pip install colorama, pip install argon2-cffi ...
 
-## Kullanım 
-Program, terminal üzerinden çalıştırılabilir. Çalıştırıldığında, kullanıcıya çeşitli seçenekler sunar:
+## Usage
+The program can be run through the terminal. When run, it offers the user several options:
 
-* Şifrele: 
-Şifrelenecek dosyayı seçer ve şifreler. 
-* Şifre Çöz: 
-Şifreli dosyanın şifresini çözer. 
-* Chunk Boyutu Ayarla: 
-Şifreleme ve şifre çözme işlemlerinde kullanılacak chunk boyutunu ayarlar. 
-* Dosya Bütünlüğü Doğrula: Dosyaların SHA-256 hash değerlerini hesaplar ve karşılaştırır. 
-* Nasıl Çalışır?: 
-Programın nasıl çalıştığını açıklar. 
-* Yapımcı: Programın yapımcısı hakkında bilgi verir.
-* Yapımcıyla mesaj gönder:
-Yapımcıya geri bildirim bırakmanızı sağlar.
-* Çıkış: 
-Programdan çıkar.
+* Encrypt:
+Selects the file to be encrypted and encrypts it.
+* Decrypt:
+Decrypts the encrypted file.
+* Set Chunk Size:
+Sets the chunk size to be used for encryption and decryption.
+* File Integrity Verify: Calculates and compares SHA-256 hash values of files.
+* How It Works:
+Explains how the program works.
+* Producer: Provides information about the producer of the program.
+* Send message to producer:
+Allows you to leave feedback to the producer.
+* Exit:
+Exits the program.
 
-* Anahtar Oluşturma:
-Program, kullanıcıdan bir şifreleme anahtarı ister. Kullanıcı, /anahtaroluştur[x] komutunu girerek belirli uzunlukta rastgele bir anahtar oluşturabilir. Örneğin, /anahtaroluştur16 komutu 16 karakter uzunluğunda bir anahtar oluşturur.
+* Key Generation:
+The program requests an encryption key from the user. The user can generate a random key of a certain length by entering the /generate key[x] command. For example, the command /generatekey16 generates a key 16 characters long.
 
-* Chunk Boyutu Ayarlama: 
-Kullanıcı, chunk boyutunu MB cinsinden ayarlayabilir. Varsayılan olarak, şifreleme ve şifre çözme işlemleri için chunk boyutu 2 MB olarak ayarlanmıştır.
+* Chunk Size Setting:
+The user can set the chunk size in MB. By default, the chunk size is set to 2 MB for encryption and decryption operations.
 
-* Dosya Bütünlüğü Doğrulama: Kullanıcı, dosya bütünlüğünü doğrulamak için dosyanın SHA-256 hash değerini hesaplayabilir ve daha sonra bu değeri karşılaştırabilir. Bu özellik, dosyaların değiştirilip değiştirilmediğini kontrol etmek için kullanışlıdır.
+* File Integrity Verification: To verify file integrity, the user can calculate the SHA-256 hash value of the file and then compare this value. This feature is useful for checking if files have been modified.
 
-## Örnek Kullanım 
-Şifreleme Programı çalıştırın ve "1" tuşuna basarak şifreleme seçeneğini seçin. Şifrelenecek dosyayı seçin. Şifreleme anahtarını girin (veya /anahtaroluştur[x] komutunu kullanarak rastgele bir anahtar oluşturun). Şifreleme işlemi tamamlandığında, şifreli dosya aynı dizine .enc uzantısı ile kaydedilir. Şifre Çözme Programı çalıştırın ve "2" tuşuna basarak şifre çözme seçeneğini seçin. Şifresi çözülecek dosyayı seçin. Şifre çözme anahtarını girin. Şifre çözme işlemi tamamlandığında, çözülen dosya aynı dizine kaydedilir.
+## Example Usage
+Encryption Run the program and select the encryption option by pressing "1". Select the file to be encrypted. Enter the encryption key (or generate a random key using the /generate key[x] command). When the encryption process is complete, the encrypted file is saved in the same directory with the .enc extension. Decryption Run the program and select the decryption option by pressing the "2" key. Select the file to be decrypted. Enter the decryption key. When the decryption process is complete, the decrypted file is saved in the same directory.
 
-## Lisans 
-Bu proje MIT lisansı altında lisanslanmıştır. Ayrıntılar için LICENSE dosyasına bakın.
+## License
+This project is licensed under the MIT license. See the LICENSE file for details.
