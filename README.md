@@ -1,7 +1,9 @@
 # About the Project
+
 ## First Look
 This project is a Python application that allows users to securely encrypt and decrypt their files. The program encrypts files using the XChaCha20-Poly1305 encryption algorithm and derives a 256-bit long key with the argon2 KDF algorithm. It also offers SHA-256 hash calculation to verify the integrity of the files.
 
+![screenshot](https://github.com/ahmetemre3829/Encryption-Program/assets/96890199/2f68a1b8-7724-4cd7-a8cb-81d88b13cb38)
 ## Features
 * File Encryption:
 Encrypts the user's selected file and saves the encrypted file with the .enc extension.
