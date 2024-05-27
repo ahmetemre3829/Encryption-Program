@@ -491,7 +491,7 @@ while True:
             print("*You are allowed to send 3 messages per hour. Select '7db' to see your message history.")
             print("*If you want me to return the messages you send, you can write your telegram username with @ at the beginning in the 'From' section. You can also write your e-mail address if you want. If you do not want me to return, you can only write your name.\n")
         elif choice == "6":
-            print("Producer: Ahmet Emre\nGithub: ahmetemre3829\nTelegram: Select '7' to send a message.\nVersion: 3.6.3\n26/05/2024\n")
+            print("Producer: Ahmet Emre\nGithub: ahmetemre3829\nTelegram: Select '7' to send a message.\nVersion: 3.6.4\n27/05/2024\n")
         elif choice == "3":
             try:
                 print(Fore.RED + "Caution: The chunk size you use for encryption must be the same as the chunk size you use for decryption!")
