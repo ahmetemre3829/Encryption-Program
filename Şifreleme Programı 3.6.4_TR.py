@@ -491,7 +491,7 @@ while True:
             print("*Mesaj gönderme hakkınız saatte 3 adettir. Mesaj geçmişinizi görmek için '7db' seçeneğini seçin.")
             print("*Eğer gönderdiğiniz mesajlara geri dönüş yapmamı istiyorsanız 'Gönderen' kısmına telegram kullanıcı adınızı başında @ olacak şekilde yazabilirsiniz. İsterseniz mail adresinizide yazabilirsiniz. Dönüş yapmamı istemezseniz sadece adınızı yazabilirsiniz.\n")
         elif choice == "6":
-            print("Yapımcı: Ahmet Emre\nGithub: ahmetemre3829\nTelegram: Mesaj göndermek için '7' seçin.\nVersiyon: 3.6.3\n26/05/2024\n")
+            print("Yapımcı: Ahmet Emre\nGithub: ahmetemre3829\nTelegram: Mesaj göndermek için '7' seçin.\nVersiyon: 3.6.4\n27/05/2024\n")
         elif choice == "3":
             try:
                 print(Fore.RED + "Dikkat: Şifreleme işlemi yaparken kullandığınız chunk boyutu ile şifre çözme işlemi yaparken kullandığınız chunk boyutu aynı olmalıdır!")
