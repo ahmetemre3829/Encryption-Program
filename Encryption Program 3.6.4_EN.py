@@ -494,6 +494,7 @@ while True:
             print("Producer: Ahmet Emre\nGithub: ahmetemre3829\nTelegram: Select '7' to send a message.\nVersion: 3.6.3\n26/05/2024\n")
         elif choice == "3":
             try:
+                print(Fore.RED + "Caution: The chunk size you use for encryption must be the same as the chunk size you use for decryption!")
                 chunk_input = input("Enter the desired chunk size in MB: ")
                 CHUNK_SIZE = int(chunk_input) * 1024 * 1024 if chunk_input else DEFAULT_CHUNK_SIZE
                 print(Fore.GREEN + "Chunk size set to",Fore.CYAN + f"{CHUNK_SIZE / (1024 * 1024):.0f}", Fore.GREEN + "MB.\n")
