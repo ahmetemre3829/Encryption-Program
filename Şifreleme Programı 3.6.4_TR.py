@@ -494,6 +494,7 @@ while True:
             print("Yapımcı: Ahmet Emre\nGithub: ahmetemre3829\nTelegram: Mesaj göndermek için '7' seçin.\nVersiyon: 3.6.3\n26/05/2024\n")
         elif choice == "3":
             try:
+                print(Fore.RED + "Dikkat: Şifreleme işlemi yaparken kullandığınız chunk boyutu ile şifre çözme işlemi yaparken kullandığınız chunk boyutu aynı olmalıdır!")
                 chunk_input = input("İstediğiniz chunk boyutunu MB cinsinden girin: ")
                 CHUNK_SIZE = int(chunk_input) * 1024 * 1024 if chunk_input else DEFAULT_CHUNK_SIZE
                 print(Fore.GREEN + "Chunk boyutu",Fore.CYAN + f"{CHUNK_SIZE / (1024 * 1024):.0f}", Fore.GREEN + "MB olarak ayarlandı.\n")
