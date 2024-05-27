@@ -54,8 +54,5 @@ The user can set the chunk size in MB. By default, the chunk size is set to 2 MB
 
 * File Integrity Verification: To verify file integrity, the user can calculate the SHA-256 hash value of the file and then compare this value. This feature is useful for checking if files have been modified.
 
-## Example Usage
-Encryption Run the program and select the encryption option by pressing "1". Select the file to be encrypted. Enter the encryption key (or generate a random key using the /generate key[x] command). When the encryption process is complete, the encrypted file is saved in the same directory with the .enc extension. Decryption Run the program and select the decryption option by pressing the "2" key. Select the file to be decrypted. Enter the decryption key. When the decryption process is complete, the decrypted file is saved in the same directory.
-
 ## License
 This project is licensed under the MIT license. See the LICENSE file for details.
